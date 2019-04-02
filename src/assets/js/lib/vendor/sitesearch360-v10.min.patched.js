@@ -56,9 +56,9 @@
         }
         return s instanceof e
           ? ((n = n.concat(this._addNode(s.get(), i))),
-            s.clear(),
-            s.push(n),
-            n)
+          s.clear(),
+          s.push(n),
+          n)
           : s instanceof Node ||
               (void 0 !== s && s.appendChild && s.cloneNode)
             ? (this._it(function (e, t) {
@@ -68,7 +68,7 @@
                 ? e.appendChild(o)
                 : e.insertBefore(o, e.firstChild)
             }),
-              n)
+            n)
             : void 0
       }),
       (this._init = function () {
@@ -134,9 +134,9 @@
                 var a = r.split('.')
                 a.length == 2 &&
                     ((r = r.trim()),
-                      t._callbacksByName[r] || (t._callbacksByName[r] = []),
-                      t._callbacksByName[r].push(n),
-                      (r = a[0]))
+                    t._callbacksByName[r] || (t._callbacksByName[r] = []),
+                    t._callbacksByName[r].push(n),
+                    (r = a[0]))
               }
               s.addEventListener(r.trim(), n)
             }
@@ -158,7 +158,7 @@
               }
             })
           }),
-            i)
+          i)
           : i
       }),
       (this.mouseenter = function (e) {
@@ -356,7 +356,7 @@
           ? (this._it(function (t) {
             t.value = e
           }),
-            this)
+          this)
           : n.length > 0 ? n[0].value : void 0
       }),
       (this.css = function (e, t) {
@@ -364,7 +364,7 @@
           ((e = e.replace(/-([a-z])/g, function (e) {
             return e[1].toUpperCase()
           })),
-            void 0 !== t)
+          void 0 !== t)
         ) {
           var s = t.toString()
           o[e] &&
@@ -573,7 +573,7 @@
         this._it(function (i) {
           if (
             (t._clearAnimation(i, 'slide'),
-              s == 0 || t.prefersReducedMotion())
+            s == 0 || t.prefersReducedMotion())
           ) {
             o(i)
           } else {
@@ -615,7 +615,7 @@
             r = Math.abs(o - e)
           if (
             (t._clearAnimation(n, 'scrollTop'),
-              r < 1 || s == 0 || t.prefersReducedMotion())
+            r < 1 || s == 0 || t.prefersReducedMotion())
           ) {
             n.scrollTop = e
           } else {
@@ -640,7 +640,7 @@
         this._it(function (o) {
           if (
             (t._clearAnimation(o, 'positionTop'),
-              s == 0 || t.prefersReducedMotion())
+            s == 0 || t.prefersReducedMotion())
           ) {
             n(o)
           } else {
@@ -730,8 +730,8 @@
   (t._notifyAnimation = function (e, s, i) {
     e.sxQueryAnimationFlag ||
         ((e.sxQueryAnimationFlag = t._animationNodeFlag),
-          t._animationNodeFlag++,
-          (t._animations[e.sxQueryAnimationFlag] = {})),
+        t._animationNodeFlag++,
+        (t._animations[e.sxQueryAnimationFlag] = {})),
     (t._animations[e.sxQueryAnimationFlag][s] = i)
   }),
   (t._clearAnimation = function (e, s) {
@@ -969,8 +969,8 @@ var UniBox = function () {
         var s = xe().val()
         ;(t === 27 || t === 13 || t === 9 || (s.length < S && void 0 === M)) &&
           (ie(e),
-            t === 13 && void 0 !== a && h === -1 && (a.call(this, s), ye()),
-            (h = -1))
+          t === 13 && void 0 !== a && h === -1 && (a.call(this, s), ye()),
+          (h = -1))
       } else ie(e), (h = -1)
     }
     function ie (t) {
@@ -980,8 +980,8 @@ var UniBox = function () {
         n = W
       if (
         (i.text() !== n && i.text(n),
-          e.removeAttribute('aria-activedescendant'),
-          void 0 !== d && s.hasClass('uniboxActive'))
+        e.removeAttribute('aria-activedescendant'),
+        void 0 !== d && s.hasClass('uniboxActive'))
       ) {
         try {
           d.call(this, t, e.val(), !1)
@@ -1059,9 +1059,9 @@ var UniBox = function () {
         I &&
           I.length > 0 &&
           ((p = I),
-            sxQuery.each(Object.keys(s.suggests), function (e, t) {
-              sxQuery.inArray(t, p) < 0 && p.push(t)
-            }))
+          sxQuery.each(Object.keys(s.suggests), function (e, t) {
+            sxQuery.inArray(t, p) < 0 && p.push(t)
+          }))
         var v = 0
         pe()
           ? a.removeAttribute('aria-activedescendant')
@@ -1093,7 +1093,7 @@ var UniBox = function () {
               (g == 'ss360QuerySuggestions' &&
                   (g = ss360Config.querySuggestionHeadline) == null &&
                   (g = ''),
-                g.length > 0)
+              g.length > 0)
             ) {
               var h = sxQuery(
                 '<' +
@@ -1136,21 +1136,21 @@ var UniBox = function () {
               (s.link != null && s.link != ''
                 ? ((n +=
                       '<a class="uniboxSearchContent" href="' + s.link + '">'),
-                  (n += oe(s.name, u)),
-                  (n += '</a>'))
+                (n += oe(s.name, u)),
+                (n += '</a>'))
                 : s.name != null &&
                     s.name != '' &&
                     (n +=
                       '<span class="uniboxSearchContent">' +
                       oe(s.name, u) +
                       '</span>'),
-                s.content != null &&
+              s.content != null &&
                   s.content != '' &&
                   (n +=
                     '<p class="unibox-result-content">' +
                     oe(s.content, u) +
                     '</p>'),
-                s.suggestionHtml != null && s.suggestionHtml != '')
+              s.suggestionHtml != null && s.suggestionHtml != '')
             ) {
               n +=
                   '<span class="uniboxSearchContent">' +
@@ -1202,60 +1202,60 @@ var UniBox = function () {
         var A = pe() ? sxQuery('#unibox-special') : t
         if (
           ((b = A.find('.unibox-selectable')),
-            R &&
+          R &&
             R.length > 0 &&
             ((b = []),
-              sxQuery.each(R, function (e, t) {
+            sxQuery.each(R, function (e, t) {
+              b = b.concat(
+                A.find(
+                  '.unibox-suggest-' + re(t) + ':first .unibox-selectable'
+                ).get()
+              )
+            }),
+            sxQuery.each(
+              sxQuery.grep(Object.keys(s.suggests), function (e) {
+                if (R.indexOf(e) < 0) return !0
+              }),
+              function (e, t) {
                 b = b.concat(
                   A.find(
                     '.unibox-suggest-' + re(t) + ':first .unibox-selectable'
                   ).get()
                 )
-              }),
-              sxQuery.each(
-                sxQuery.grep(Object.keys(s.suggests), function (e) {
-                  if (R.indexOf(e) < 0) return !0
-                }),
-                function (e, t) {
-                  b = b.concat(
-                    A.find(
-                      '.unibox-suggest-' + re(t) + ':first .unibox-selectable'
-                    ).get()
-                  )
-                }
-              )),
-            (h = -1),
-            sxQuery(b).click(function (e) {
-              e.preventDefault(), e.stopPropagation()
-              var t = sxQuery(this)
-                .find('.uniboxSearchContent:first')
-                .text()
-              xe().val(t)
-              var s = void 0
-              try {
-                s = sxQuery(this)
-                  .find('a:first')
-                  .attr('href')
-              } catch (e) {}
-              if (l != null) {
-                try {
-                  l.call(this, t, s)
-                } catch (e) {
-                  console.log(e)
-                }
               }
-              se(), ie(e), ye()
-            }),
-            b.mousedown(function (e) {
-              Y = !0
-            }),
-            b.mouseup(function (e) {
-              Y = !1
-            }),
-            t.find('.unibox-selectable .unibox-extra').click(function (e) {
-              e.stopPropagation()
-            }),
-            s.words != null && !pe())
+            )),
+          (h = -1),
+          sxQuery(b).click(function (e) {
+            e.preventDefault(), e.stopPropagation()
+            var t = sxQuery(this)
+              .find('.uniboxSearchContent:first')
+              .text()
+            xe().val(t)
+            var s = void 0
+            try {
+              s = sxQuery(this)
+                .find('a:first')
+                .attr('href')
+            } catch (e) {}
+            if (l != null) {
+              try {
+                l.call(this, t, s)
+              } catch (e) {
+                console.log(e)
+              }
+            }
+            se(), ie(e), ye()
+          }),
+          b.mousedown(function (e) {
+            Y = !0
+          }),
+          b.mouseup(function (e) {
+            Y = !1
+          }),
+          t.find('.unibox-selectable .unibox-extra').click(function (e) {
+            e.stopPropagation()
+          }),
+          s.words != null && !pe())
         ) {
           s.words.length > 0 &&
             y.length > 0 &&
@@ -1288,13 +1288,13 @@ var UniBox = function () {
             var o = t.find('#unibox-invisible')
             if (
               (o.css('padding', e.css('padding')),
-                o.html(
-                  u.replace(
-                    new RegExp(i.name, 'gi'),
-                    '<span>' + i.name + '</span>'
-                  )
-                ),
-                (k != 'all' && k != 'top') || sxQuery.inArray(i.image, w) != -1)
+              o.html(
+                u.replace(
+                  new RegExp(i.name, 'gi'),
+                  '<span>' + i.name + '</span>'
+                )
+              ),
+              (k != 'all' && k != 'top') || sxQuery.inArray(i.image, w) != -1)
             ) {
               sxQuery.inArray(i.image, w) > -1 && T.push(i.image)
             } else {
@@ -1351,9 +1351,9 @@ var UniBox = function () {
         L == null || d || ((d = !0), (g = !0), n.append(L)),
         d
           ? (e.attr('aria-expanded', 'true'),
-            n.isVisible()
-              ? (n.addClass('uniboxActive'), he())
-              : pe() ||
+          n.isVisible()
+            ? (n.addClass('uniboxActive'), he())
+            : pe() ||
                   (ge()
                     ? n.slideDown(m, function () {
                       n.addClass('uniboxActive'),
@@ -1361,9 +1361,9 @@ var UniBox = function () {
                       n.css('top', le().top)
                     })
                     : (n.css('display', 'block'),
-                      n.addClass('uniboxActive'),
-                      he())),
-            O && !g && n.append(O))
+                    n.addClass('uniboxActive'),
+                    he())),
+          O && !g && n.append(O))
           : (sxQuery('#ss360-status-message').text(X), se(), Ce()),
         void 0 !== G && typeof G === 'function' && G.call(this, d)
       } else se()
@@ -1405,7 +1405,7 @@ var UniBox = function () {
             (s.keyCode == 37
               ? (i = n.prev())
               : s.keyCode == 39 && (i = n.next()),
-              i.hasClass('unibox-suggest-cluster'))
+            i.hasClass('unibox-suggest-cluster'))
           ) {
             var o = i.find('div.unibox-selectable')[0]
             h = be()
@@ -1420,11 +1420,11 @@ var UniBox = function () {
           var a = sxQuery(b[h])
           if (
             (a.addClass('active'),
-              r.attr('aria-selected', 'false'),
-              r.attr('id', ''),
-              a.attr('id', 'unibox-active'),
-              a.attr('aria-selected', 'true'),
-              a.length > 0)
+            r.attr('aria-selected', 'false'),
+            r.attr('id', ''),
+            a.attr('id', 'unibox-active'),
+            a.attr('aria-selected', 'true'),
+            a.length > 0)
           ) {
             ;(pe() ? sxQuery('#unibox-special-searchbox') : e).attr(
               'aria-activedescendant',
@@ -1508,14 +1508,14 @@ var UniBox = function () {
             }
             s.length >= S && p != ''
               ? ((A = s),
-                sxQuery.ajax({
-                  usedQuery: s,
-                  url: p + encodeURIComponent(s),
-                  dataType: 'json',
-                  success: function (e, t) {
-                    e == A && ae(t), (Q = t)
-                  }.bind(this, s)
-                }))
+              sxQuery.ajax({
+                usedQuery: s,
+                url: p + encodeURIComponent(s),
+                dataType: 'json',
+                success: function (e, t) {
+                  e == A && ae(t), (Q = t)
+                }.bind(this, s)
+              }))
               : Ce()
           }
         } else ae(Q)
@@ -1570,7 +1570,7 @@ var UniBox = function () {
     function be () {
       return pe()
         ? (sxQuery('#unibox-suggest-box-special').length === 0 && ve(),
-          sxQuery('#unibox-suggest-box-special'))
+        sxQuery('#unibox-suggest-box-special'))
         : sxQuery('#unibox-suggest-box')
     }
     function ve () {
@@ -1614,15 +1614,15 @@ var UniBox = function () {
         var h = sxQuery('body')
         if (
           (h.prepend(i),
-            h.append(
-              '<div id="unibox-special-hidden-content" style="overflow: hidden;"></div>'
-            ),
-            c.keydown(ne(de, n)),
-            c.keydown(ue),
-            c.on('search', function (e) {
-              de(e)
-            }),
-            a &&
+          h.append(
+            '<div id="unibox-special-hidden-content" style="overflow: hidden;"></div>'
+          ),
+          c.keydown(ne(de, n)),
+          c.keydown(ue),
+          c.on('search', function (e) {
+            de(e)
+          }),
+          a &&
             d.on('click', function () {
               var e = c.val() || ''
               a.call(this, e),
@@ -1632,43 +1632,43 @@ var UniBox = function () {
                 }, 200)
               })
             }),
-            c.keyup(se),
-            c.keyup(function (e) {
-              ;(e.keyCode || e.which) == 27 && ye()
-            }),
-            l.on('click', ye),
-            _ &&
+          c.keyup(se),
+          c.keyup(function (e) {
+            ;(e.keyCode || e.which) == 27 && ye()
+          }),
+          l.on('click', ye),
+          _ &&
             g.scroll(function (e) {
               var t = e.target.scrollTop / 100 / 2
               t > 1 ||
                 t < 0 ||
                 ((t = Math.log1p(t)),
-                  (function (e) {
-                    var t = sxQuery('#unibox-special-searchbox'),
-                      s = sxQuery('#unibox-special'),
-                      i = q.box.height,
-                      n = q.box.fontSize / i,
-                      o = (i - 32) * e,
-                      r = Math.round(i - o),
-                      a = Math.round(n * r)
-                    t.css('height', r), t.css('font-size', a)
-                    var l = q.icons.width,
-                      c = q.icons.height,
-                      u = (l - 34) * e,
-                      d = (c - 34) * e,
-                      g = Math.round(l - u),
-                      h = Math.round(c - d),
-                      p = s.find('.unibox-special-icon')
-                    p.css('height', h), p.css('width', g)
-                    var f = q.box.marginLeft - (l - g),
-                      x = 'calc(100% - 2*' + f + 'px)'
-                    t.css('width', x),
-                    t.css('margin-left', f),
-                    t.css('margin-right', f)
-                  })((t *= 1 / Math.log1p(1))),
-                  fe())
+                (function (e) {
+                  var t = sxQuery('#unibox-special-searchbox'),
+                    s = sxQuery('#unibox-special'),
+                    i = q.box.height,
+                    n = q.box.fontSize / i,
+                    o = (i - 32) * e,
+                    r = Math.round(i - o),
+                    a = Math.round(n * r)
+                  t.css('height', r), t.css('font-size', a)
+                  var l = q.icons.width,
+                    c = q.icons.height,
+                    u = (l - 34) * e,
+                    d = (c - 34) * e,
+                    g = Math.round(l - u),
+                    h = Math.round(c - d),
+                    p = s.find('.unibox-special-icon')
+                  p.css('height', h), p.css('width', g)
+                  var f = q.box.marginLeft - (l - g),
+                    x = 'calc(100% - 2*' + f + 'px)'
+                  t.css('width', x),
+                  t.css('margin-left', f),
+                  t.css('margin-right', f)
+                })((t *= 1 / Math.log1p(1))),
+                fe())
             }),
-            F)
+          F)
         ) {
           var p = parseFloat(m),
             f = sxQuery('#unibox-special-transition-background'),
@@ -1747,20 +1747,20 @@ var UniBox = function () {
             }
             _ &&
               (s.css('width', ''),
-                s.css('height', ''),
-                t.css('height', ''),
-                t.css('width', ''),
-                t.css('margin-left', ''),
-                t.css('margin-right', ''),
-                t.css('font-size', ''),
-                sxQuery('#unibox-suggest-box-special').scrollTop(0),
-                (q.icons = {}),
-                (q.icons.width = parseFloat(s.css('width'))),
-                (q.icons.height = parseFloat(s.css('height'))),
-                (q.box = {}),
-                (q.box.height = parseFloat(t.css('height'))),
-                (q.box.marginLeft = parseFloat(t.css('margin-left'))),
-                (q.box.fontSize = parseFloat(t.css('font-size'))))
+              s.css('height', ''),
+              t.css('height', ''),
+              t.css('width', ''),
+              t.css('margin-left', ''),
+              t.css('margin-right', ''),
+              t.css('font-size', ''),
+              sxQuery('#unibox-suggest-box-special').scrollTop(0),
+              (q.icons = {}),
+              (q.icons.width = parseFloat(s.css('width'))),
+              (q.icons.height = parseFloat(s.css('height'))),
+              (q.box = {}),
+              (q.box.height = parseFloat(t.css('height'))),
+              (q.box.marginLeft = parseFloat(t.css('margin-left'))),
+              (q.box.fontSize = parseFloat(t.css('font-size'))))
           },
           i = sxQuery(
             '#unibox-special ~ *:not(#unibox-special-transition-background):not(#unibox-special-hidden-content):not(.ss360-sr-only)'
@@ -1919,43 +1919,43 @@ var UniBox = function () {
         var w = b.specialMobileSuggest
         if (
           ((D = void 0 === w.enabled || w.enabled),
-            (H = w.breakpoint || 768),
-            (E = w.placeholder || ''),
-            (U = w.customTopHtml || ''),
-            (F =
+          (H = w.breakpoint || 768),
+          (E = w.placeholder || ''),
+          (U = w.customTopHtml || ''),
+          (F =
             (void 0 === w.animateTransitions || w.animateTransitions) &&
             !sxQuery.prefersReducedMotion()),
-            (_ =
+          (_ =
             void 0 === w.resizeSearchBoxOnScroll || w.resizeSearchBoxOnScroll),
-            (z =
+          (z =
             void 0 !== w.searchBoxPlaceholder
               ? w.searchBoxPlaceholder
               : 'Search'),
-            (G = b.suggestChangeCallback),
-            b.redirectCallback,
-            (j = 'h' + Math.min(Math.max(1, b.headingLevel || 4), 6)),
-            (V = b.searchFieldLabel),
-            (W =
+          (G = b.suggestChangeCallback),
+          b.redirectCallback,
+          (j = 'h' + Math.min(Math.max(1, b.headingLevel || 4), 6)),
+          (V = b.searchFieldLabel),
+          (W =
             void 0 === b.srSuggestionsHiddenText
               ? W
               : b.srSuggestionsHiddenText),
-            (X = void 0 === b.srNoSuggestionsText ? X : b.srNoSuggestionsText),
-            (J =
+          (X = void 0 === b.srNoSuggestionsText ? X : b.srNoSuggestionsText),
+          (J =
             void 0 === b.srSuggestionsCountText ? J : b.srSuggestionsCountText),
-            (K = void 0 === b.srOneSuggestionText ? K : b.srOneSuggestionText),
-            ($ =
+          (K = void 0 === b.srOneSuggestionText ? K : b.srOneSuggestionText),
+          ($ =
             void 0 === b.srSuggestBoxControlDescription
               ? $
               : b.srSuggestBoxControlDescription),
-            e.attr('autocomplete', 'off'),
-            V &&
+          e.attr('autocomplete', 'off'),
+          V &&
             (!e.attr('id') ||
               sxQuery("label[for='" + e.attr('id') + "']").length === 0))
         ) {
           e.attr('id') ||
             (window.ss360UniboxCount || (window.ss360UniboxCount = 0),
-              window.ss360UniboxCount++,
-              e.attr('id', 'unibox-search-box-' + window.ss360UniboxCount))
+            window.ss360UniboxCount++,
+            e.attr('id', 'unibox-search-box-' + window.ss360UniboxCount))
           var C = e.attr('id'),
             Q =
               "<label style='" +
@@ -2027,14 +2027,14 @@ var UniBox = function () {
                   return !1
                 })(s)) &&
               (s.prepend(sxQuery('#unibox-suggest-box')),
-                s.append(sxQuery('#unibox-invisible')))
+              s.append(sxQuery('#unibox-invisible')))
           }
           var i
           if (
             (sxQuery(this).val().length > 0
               ? de({ keyCode: -1 })
               : M != null && ae(M),
-              void 0 !== u)
+            void 0 !== u)
           ) {
             try {
               u.call(this, t, sxQuery(this).val())
@@ -2062,18 +2062,18 @@ var UniBox = function () {
         e.focusout(function (e) {
           Y ||
               ((e = e || window.event),
-                setTimeout(function () {
-                  sxQuery(document.activeElement).parents('#unibox-suggest-box')
-                    .length === 0 && ie(e)
-                }, 10))
+              setTimeout(function () {
+                sxQuery(document.activeElement).parents('#unibox-suggest-box')
+                  .length === 0 && ie(e)
+              }, 10))
         }),
         P &&
             (e.click(function (e) {
               e.stopPropagation()
             }),
-              s.click(function (e) {
-                e.stopPropagation()
-              }))
+            s.click(function (e) {
+              e.stopPropagation()
+            }))
         var re = e.attr('placeholder')
         ;(g = re && re.length > 0 ? re : g) &&
           g.length > 0 &&
@@ -2099,8 +2099,8 @@ var UniBox = function () {
                     .val(e)
                     .addClass('hasPlaceholder')
               }),
-              e.val(g)),
-            e.attr('placeholder', g))
+            e.val(g)),
+          e.attr('placeholder', g))
         sxQuery('#unibox-invisible').remove()
         var le = sxQuery(
           '<div id="unibox-invisible">&nbsp;<span>&nbsp;</span></div>'
@@ -2241,7 +2241,7 @@ var UniBox = function () {
                     })
                 })(s)
             })(e),
-              ss360Settings.externalTracking.providers.indexOf('GA') > -1 &&
+            ss360Settings.externalTracking.providers.indexOf('GA') > -1 &&
               window.ga &&
               ga('send', 'pageview'))
       }
@@ -2319,7 +2319,7 @@ var UniBox = function () {
         return (
           ss360Settings.suggestionsEqualSearch &&
             ((t = t.replace('/sites/suggest', '/sites')),
-              (t += '&includeContent=true&log=false')),
+            (t += '&includeContent=true&log=false')),
           void 0 !== ss360Settings.includeContentGroups &&
             (t +=
               '&includeContentGroups=' +
@@ -2358,12 +2358,12 @@ var UniBox = function () {
               '-100%',
               ss360Settings.animationSpeed
             ),
-              (a = !1),
-              sxQuery('#ss360CloseLayerButton').css('position', 'absolute'),
-              sxQuery('#ss360CloseLayerButton').css('right', '8px'),
-              sxQuery('body').css('overflow', 'initial'),
-              y()),
-            t == null)
+            (a = !1),
+            sxQuery('#ss360CloseLayerButton').css('position', 'absolute'),
+            sxQuery('#ss360CloseLayerButton').css('right', '8px'),
+            sxQuery('body').css('overflow', 'initial'),
+            y()),
+          t == null)
         ) {
           var e = sxQuery('#ss360-layer')
           sxQuery('#ss360Darken').remove(),
@@ -2380,8 +2380,8 @@ var UniBox = function () {
       init: function () {
         if (
           ((r = !0),
-            sxQuery('#ss360-search-console').remove(),
-            ss360Settings.searchTrigger != null)
+          sxQuery('#ss360-search-console').remove(),
+          ss360Settings.searchTrigger != null)
         ) {
           ;(ss360Settings.searchBoxSelector = '#ss360-query'),
           (ss360Settings.searchResults = { contentBlock: '#ss360-results' })
@@ -2419,14 +2419,14 @@ var UniBox = function () {
                 h +
                 '". Please update your ss360Config object.'
             ),
-              (r = !1)),
-            document.querySelectorAll('script[src*=sitesearch360-v]').length >
+            (r = !1)),
+          document.querySelectorAll('script[src*=sitesearch360-v]').length >
             1 &&
             (b(
               'There is more than one sitesearch360 script on this page. Please remove one.'
             ),
-              (r = !1)),
-            ss360Settings.enterCallback != SS360.showResults)
+            (r = !1)),
+          ss360Settings.enterCallback != SS360.showResults)
         ) {
           var p = ss360Settings.enterCallback
           ss360Settings.enterCallback = function (e) {
@@ -2463,7 +2463,7 @@ var UniBox = function () {
         var v = sxQuery(h).unibox(ss360Settings)
         if (
           (v instanceof Array ? (n = v) : n.push(v),
-            ss360Settings.searchButton != null)
+          ss360Settings.searchButton != null)
         ) {
           var y = n[0]
           sxQuery(ss360Settings.searchButton).click(function (e) {
@@ -2503,11 +2503,11 @@ var UniBox = function () {
                 ? SS360.closeLayer()
                 : t == null &&
                   (S.removeClass('ss360-animated ss360-bi ss360-fid'),
-                    S.addClass('ss360-animated ss360-bo'),
-                    sxQuery('#ss360Darken').remove(),
-                    setTimeout(function () {
-                      SS360.closeLayer()
-                    }, 250)))
+                  S.addClass('ss360-animated ss360-bo'),
+                  sxQuery('#ss360Darken').remove(),
+                  setTimeout(function () {
+                    SS360.closeLayer()
+                  }, 250)))
         }),
         w.click(function (e) {
           ;(h && sxQuery(h).is(e.target)) ||
@@ -2544,7 +2544,7 @@ var UniBox = function () {
         var k = m('ss360-tracking')
         if (
           (k != null && k == '0' && (o = !1),
-            ss360Settings.initCallback != null)
+          ss360Settings.initCallback != null)
         ) {
           try {
             ss360Settings.initCallback()
@@ -2570,20 +2570,20 @@ var UniBox = function () {
             void 0 !== (Q = T.border) &&
                 void 0 !== Q.radius &&
                 (C.css('border', '1px solid'),
-                  C.css('border-radius', Q.radius),
-                  I.length > 0 &&
+                C.css('border-radius', Q.radius),
+                I.length > 0 &&
                   (I.css('border', '1px solid'),
-                    I.css('border-radius', Q.radius))),
+                  I.css('border-radius', Q.radius))),
             void 0 !== Q &&
                 void 0 !== Q.color &&
                 (C.css('border-color', Q.color),
-                  I.length > 0 && I.css('border-color', Q.color)),
+                I.length > 0 && I.css('border-color', Q.color)),
             (Q = T.padding)
             var R = '5px'
             void 0 !== Q &&
               (C.css('padding', Q),
-                I.length > 0 && I.css('padding', Q),
-                (R = Q)),
+              I.length > 0 && I.css('padding', Q),
+              (R = Q)),
             (Q = T.icon)
             var N = 0
             if (void 0 !== Q && Q.image == 'magnifier') {
@@ -2600,10 +2600,10 @@ var UniBox = function () {
               void 0 !== (Q = T.button) &&
               I.length > 0 &&
               (I.css('cursor', 'pointer'),
-                void 0 !== Q.text
-                  ? (I.val(Q.text), I.html(Q.text))
-                  : (I.val(' '), I.html(' ')),
-                Q.icon == 'magnifier')
+              void 0 !== Q.text
+                ? (I.val(Q.text), I.html(Q.text))
+                : (I.val(' '), I.html(' ')),
+              Q.icon == 'magnifier')
             ) {
               A = C.outerHeight() - 18
               for (
@@ -2629,17 +2629,17 @@ var UniBox = function () {
                       '"/>'
                 )
                 : ((N = (C.outerHeight() - A) / 2),
-                  I.css(
-                    'background',
-                    "url('" + B + "') no-repeat " + R + ' ' + N + 'px'
-                  ),
-                  I.css('background-size', A + 'px')),
+                I.css(
+                  'background',
+                  "url('" + B + "') no-repeat " + R + ' ' + N + 'px'
+                ),
+                I.css('background-size', A + 'px')),
               I.css('min-width', I.outerHeight() + 'px')
             }
             void 0 !== (Q = T.background) &&
               void 0 !== Q.color &&
               (C.css('background-color', Q.color),
-                I.length > 0 && I.css('background-color', Q.color))
+              I.length > 0 && I.css('background-color', Q.color))
           } catch (e) {
             console.log(e)
           }
@@ -2658,7 +2658,7 @@ var UniBox = function () {
             void 0 !== (Q = T.border) &&
                 void 0 !== Q.radius &&
                 (C.css('border', '1px solid'),
-                  C.css('border-radius', Q.radius)),
+                C.css('border-radius', Q.radius)),
             void 0 !== Q &&
                 void 0 !== Q.color &&
                 C.css('border-color', Q.color)
@@ -2682,7 +2682,7 @@ var UniBox = function () {
       focus: function (e, t) {
         if (
           ((s = sxQuery(e.target)),
-            ss360Settings.inputFocusLayer != null &&
+          ss360Settings.inputFocusLayer != null &&
             ss360Settings.inputFocusLayer)
         ) {
           sxQuery('#ss360Darken-input').remove()
@@ -2726,7 +2726,7 @@ var UniBox = function () {
         if ((i = i.trim()).length != 0) {
           if (
             (sxQuery('#ss360-searchbox-spinner').fadeIn(),
-              t != null && t.url != null && t.url != '')
+            t != null && t.url != null && t.url != '')
           ) {
             var m = t.url
             if (
@@ -2744,7 +2744,7 @@ var UniBox = function () {
                   i +
                   '; path=/'
               })('ss360LastQuery', i, 1),
-                document.location.href.indexOf(m) == -1)
+              document.location.href.indexOf(m) == -1)
             ) {
               var y = new RegExp(
                 '[?&]' + ss360Settings.searchQueryParamName + '=[^ &]*'
@@ -2885,28 +2885,28 @@ var UniBox = function () {
                       : sxQuery(
                         '<section class="ss360-layer-content" aria-labelledby="ss360-search-result-heading">'
                       )),
-                    Object.keys(e.suggests).length > 1)
+                  Object.keys(e.suggests).length > 1)
                 ) {
                   var A = !1
                   ss360Settings.navigation == 'top'
                     ? ((p = sxQuery(
                       '<nav role="navigation" class="ss360-top-nav" aria-label="Search Result Navigation"><ul role="menubar"></ul></nav>'
                     )),
-                      (A = !0),
-                      sxQuery('#ss360-layer').css('overflow', 'hidden'))
+                    (A = !0),
+                    sxQuery('#ss360-layer').css('overflow', 'hidden'))
                     : ss360Settings.navigation == 'left' &&
                       ((p = sxQuery(
                         '<nav role="navigation" class="ss360-left-nav" aria-label="Search Result Navigation"><ul role="menubar"></ul></nav>'
                       )),
-                        h.addClass('ss360-left-nav'),
-                        (A = !0)),
+                      h.addClass('ss360-left-nav'),
+                      (A = !0)),
                   A && s.append(p)
                 }
                 if (
                   (s.append(h),
-                    ss360Settings.navigation == 'left' &&
+                  ss360Settings.navigation == 'left' &&
                     s.append(sxQuery('<div style="clear:both">')),
-                    ss360Settings.searchResultsCaption != null)
+                  ss360Settings.searchResultsCaption != null)
                 ) {
                   var T = e.totalResults
                   if (ss360Settings.ignoreOtherContentGroup) {
@@ -2978,7 +2978,7 @@ var UniBox = function () {
                             (setTimeout(function () {
                               i.focus()
                             }, 5),
-                              t == null)
+                            t == null)
                           ) {
                             var o =
                               sxQuery(
@@ -3034,40 +3034,40 @@ var UniBox = function () {
                                 '"><a href="' +
                                 t.link +
                                 '"'),
-                                ss360Settings.resultLinksOpenNewTab &&
+                              ss360Settings.resultLinksOpenNewTab &&
                                 (s += ' target="_blank"'),
-                                (s += '>'),
-                                (s += t.name),
-                                (s += '</a></span></header>'),
-                                ss360Settings.showResultLink &&
+                              (s += '>'),
+                              (s += t.name),
+                              (s += '</a></span></header>'),
+                              ss360Settings.showResultLink &&
                                 ((s +=
                                   '<a tabindex="-1" href="' +
                                   t.link +
                                   '" class="ss360-result-link"'),
-                                  ss360Settings.resultLinksOpenNewTab &&
+                                ss360Settings.resultLinksOpenNewTab &&
                                   (s += ' target="_blank"'),
-                                  (s += ' aria-hidden="true">'),
-                                  (s += decodeURI(t.link)),
-                                  (s += '</a>'))),
-                              (s += '<div class="ss360-content-container">'),
-                              t.image != null &&
+                                (s += ' aria-hidden="true">'),
+                                (s += decodeURI(t.link)),
+                                (s += '</a>'))),
+                            (s += '<div class="ss360-content-container">'),
+                            t.image != null &&
                               ss360Settings.showImagesResults &&
                               (t.link != null &&
                                 ((s +=
                                   '<a aria-hidden="true" tabindex="-1" href="' +
                                   t.link +
                                   '"'),
-                                  ss360Settings.resultLinksOpenNewTab &&
+                                ss360Settings.resultLinksOpenNewTab &&
                                   (s += ' target="_blank"'),
-                                  (s += '>')),
-                                (s +=
+                                (s += '>')),
+                              (s +=
                                 '<img src="' +
                                 t.image +
                                 '" alt aria-hidden="true" role="presentation" aria-label="' +
                                 t.name +
                                 '"/>'),
-                                t.link != null && (s += '</a>')),
-                              t.content != null)
+                              t.link != null && (s += '</a>')),
+                            t.content != null)
                           ) {
                             s += '<p>' + t.content + '</p>'
                           }
@@ -3083,7 +3083,7 @@ var UniBox = function () {
                         d.find('ul').append(i),
                         f++
                       }),
-                        s.length > 0)
+                      s.length > 0)
                     ) {
                       if ((h.append(d), ss360Settings.highlightQueryTerms)) {
                         for (var x = i.split(' '), b = 0; b < x.length; b++) {
@@ -3098,7 +3098,7 @@ var UniBox = function () {
                       }
                       if (
                         ((B += s.length),
-                          ss360Settings.moreResultsButton != null &&
+                        ss360Settings.moreResultsButton != null &&
                           sxQuery(
                             '.ss360-group-' +
                               n +
@@ -3153,12 +3153,12 @@ var UniBox = function () {
                       }
                     }
                   }),
-                    ss360Settings.navigation == 'top' &&
+                  ss360Settings.navigation == 'top' &&
                     sxQuery('.ss360-layer-content').css(
                       'max-height',
                       'calc(100% - 80px)'
                     ),
-                    B == 0)
+                  B == 0)
                 ) {
                   var M = (ss360Settings.noResultsText || '').replace(
                       '#QUERY#',
@@ -3172,7 +3172,7 @@ var UniBox = function () {
                     h.append(
                       '<div><a href="https://sitesearch360.com" target="_blank"><img alt="Powered by Site Search 360" aria-label="Powered by Site Search 360" role="presentation" style="max-width:120px;float:right;position:absolute;top:0;right:5px;" src="https://sitesearch360.com/cdn/sitesearch360.svg"></a></div>'
                     ),
-                    e.sortingOptions != null && e.sortingOptions.length > 0)
+                  e.sortingOptions != null && e.sortingOptions.length > 0)
                 ) {
                   var P = sxQuery(
                     '<section style="width:100%;min-height:1.5em;" id="ss360-sorting" role="search" aria-label="Sort Search Results"><select id="ss360-sorting-selection" style="max-width:150px;float:right;"></section> '
@@ -3216,9 +3216,9 @@ var UniBox = function () {
               }
               if (
                 (s.removeClass('ss360-animated ss360-bo'),
-                  s.removeClass('ss360-overlay'),
-                  sxQuery('#ss360Darken').remove(),
-                  t == null)
+                s.removeClass('ss360-overlay'),
+                sxQuery('#ss360Darken').remove(),
+                t == null)
               ) {
                 s.addClass('ss360-overlay'),
                 s.fadeIn(),
@@ -3306,7 +3306,7 @@ var UniBox = function () {
                 for (var Z in G) {
                   G.hasOwnProperty(Z) &&
                     ((Y += (V ? '?' : '&') + Z + '=' + G[Z].toLowerCase()),
-                      (V = !1))
+                    (V = !1))
                 }
                 var W = { Page: document.title, Url: Y }
                 history.pushState(W, W.Page, W.Url)
@@ -3490,8 +3490,8 @@ function initializeSs360 () {
           return s.length == 1 ? s[0] : s
         }
       })(sxQuery),
-        SS360.init(),
-        ss360Settings.defaultCss)
+      SS360.init(),
+      ss360Settings.defaultCss)
     ) {
       var e = sxQuery('body')
       e.append(
@@ -3526,9 +3526,9 @@ function initializeSs360 () {
       ),
       ss360Settings.loader.type == 'square' &&
             (sxQuery('#ss360-searchbox-spinner').html(''),
-              sxQuery('#ss360-searchbox-spinner').addClass(
-                'ss360-spinner-square'
-              ))
+            sxQuery('#ss360-searchbox-spinner').addClass(
+              'ss360-spinner-square'
+            ))
     }
     var t = {}
     if (
@@ -3538,7 +3538,7 @@ function initializeSs360 () {
         .forEach(function (e) {
           t[e.split('=')[0]] = e.split('=')[1]
         }),
-        t.ss360SearchTerm != null)
+      t.ss360SearchTerm != null)
     ) {
       try {
         sxQuery('div').highlight(
